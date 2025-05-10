@@ -26,7 +26,7 @@ export default function Contact() {
                 </p>
                 <p className="flex items-center">
                   <span className="font-medium">{t.address}:</span>
-                  <span className="ml-2">Ferizaj, 70000, Kosovo.</span>
+                  <span className="ml-2">Ferizaj, 70000, Kosovo</span>
                 </p>
                 <p className="flex items-center">
                   <span className="font-medium">{t.phone}:</span>
