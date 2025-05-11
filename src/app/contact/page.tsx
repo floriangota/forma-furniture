@@ -25,10 +25,6 @@ export default function Contact() {
                   <span className="ml-2">Muhoc, Ferizaj</span>
                 </p>
                 <p className="flex items-center">
-                  <span className="font-medium">{t.address}:</span>
-                  <span className="ml-2">Ferizaj, 70000, Kosovo</span>
-                </p>
-                <p className="flex items-center">
                   <span className="font-medium">{t.phone}:</span>
                   <span className="ml-2">+383 45 330 636</span>
                 </p>
@@ -43,7 +39,6 @@ export default function Contact() {
               <h2 className="text-xl font-semibold mb-4">{t.businessHours}</h2>
               <div className="space-y-2">
                 <p>{t.weekdays}: 8:00 - 17:00</p>
-                <p>{t.saturday}: 8:00 - 17:00</p>
                 <p>{t.sunday}: {t.closed}</p>
               </div>
             </div>
