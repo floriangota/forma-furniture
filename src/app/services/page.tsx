@@ -1,38 +1,45 @@
-import Header from '@/components/layout/Header';
+'use client';
 
-const services = [
-  {
-    name: 'Custom Furniture Design',
-    description: 'We create bespoke furniture pieces tailored to your specific needs and preferences.',
-    icon: '🎨',
-  },
-  {
-    name: 'Manufacturing',
-    description: 'High-quality manufacturing using premium materials and expert craftsmanship.',
-    icon: '🏭',
-  },
-  {
-    name: 'Installation',
-    description: 'Professional installation services to ensure your furniture is perfectly set up.',
-    icon: '🔧',
-  },
-  {
-    name: 'Consultation',
-    description: 'Expert advice on furniture selection, design, and space planning.',
-    icon: '💡',
-  },
-];
+import Header from '@/components/layout/Header';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/translations';
 
 export default function Services() {
+  const { language } = useLanguage();
+  const t = translations[language].services;
+
+  const services = [
+    {
+      name: t.customFurniture,
+      description: t.customFurnitureDesc,
+      icon: '🎨',
+    },
+    {
+      name: t.interiorDesign,
+      description: t.interiorDesignDesc,
+      icon: '🏭',
+    },
+    {
+      name: t.installation,
+      description: t.installationDesc,
+      icon: '🔧',
+    },
+    {
+      name: t.maintenance,
+      description: t.maintenanceDesc,
+      icon: '💡',
+    },
+  ];
+
   return (
     <>
       <Header />
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{t.title}</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Comprehensive furniture solutions for your home and business needs.
+              {t.description}
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

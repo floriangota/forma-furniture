@@ -21,6 +21,25 @@ module.exports = {
           900: '#0c4a6e',
         },
       },
+      keyframes: {
+        'float-slow': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'float-medium': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
+        'float-fast': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      animation: {
+        'float-slow': 'float-slow 6s ease-in-out infinite',
+        'float-medium': 'float-medium 4s ease-in-out infinite',
+        'float-fast': 'float-fast 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
