@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/translations';
+import { translations } from '@/translations/index';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

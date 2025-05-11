@@ -2,7 +2,7 @@
 
 import Header from '@/components/layout/Header';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/translations';
+import { translations } from '@/translations/index';
 
 export default function Services() {
   const { language } = useLanguage();
