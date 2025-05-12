@@ -31,7 +31,7 @@ export default function Contact() {
                 </p>
                 <p className="flex items-center">
                   <span className="font-medium">{t.email}:</span>
-                  <span className="ml-2">info@formafurniture.com</span>
+                  <span className="ml-2">forma.furnitureks@gmail.com</span>
                 </p>
               </div>
             </div>

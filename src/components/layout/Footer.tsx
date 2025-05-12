@@ -31,7 +31,7 @@ export default function Footer() {
                 <span className="font-medium">{t.phone}:</span> +383 45 330 636
               </p>
               <p>
-                <span className="font-medium">{t.email}:</span> info@formafurniture.com
+                <span className="font-medium">{t.email}:</span> forma.furnitureks@gmail.com
               </p>
             </div>
           </div>
