@@ -17,12 +17,13 @@ interface Props {
 export default function ProjectCard({ project, priority = false, featured = false }: Props) {
   const { language, t } = useLanguage();
   const cover = coverOf(project);
+  const location = project.location[language];
 
   return (
     <Link
       href={`/gallery/${project.slug}`}
       className="group block"
-      aria-label={`${project.name[language]}, ${project.location[language]}`}
+      aria-label={location ? `${project.name[language]}, ${location}` : project.name[language]}
     >
       <div className={`relative overflow-hidden bg-stone-200 ${featured ? 'aspect-[16/10]' : 'aspect-[4/3]'}`}>
         {cover && (
@@ -48,7 +49,7 @@ export default function ProjectCard({ project, priority = false, featured = fals
           <h3 className={`display text-ink ${featured ? 'text-3xl sm:text-4xl' : 'text-2xl sm:text-[28px]'}`}>
             {project.name[language]}
           </h3>
-          <p className="mt-1 text-[12px] uppercase tracking-widest2 text-stone-500">{project.location[language]}</p>
+          {location && <p className="mt-1 text-[12px] uppercase tracking-widest2 text-stone-500">{location}</p>}
         </div>
         <span className="mt-2 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-stone-300 text-ink transition-all duration-300 group-hover:border-ink group-hover:bg-ink group-hover:text-white">
           <ArrowIcon />

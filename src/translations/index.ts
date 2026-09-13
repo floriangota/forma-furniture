@@ -18,6 +18,7 @@ const en = {
     photos: 'photos',
     residential: 'Residential',
     hospitality: 'Hospitality',
+    commercial: 'Commercial',
     mixed: 'Various',
     language: 'Shqip',
   },
@@ -69,6 +70,7 @@ const en = {
     title: 'Our work, project by project',
     description:
       'Each folder collects the furniture we produced and installed for one client. Open a project to browse all the photos.',
+    projectsLabel: 'projects',
   },
   project: {
     eyebrow: 'Project',
@@ -191,6 +193,7 @@ const sq: Translations = {
     photos: 'foto',
     residential: 'Banim',
     hospitality: 'Hoteleri & gastronomi',
+    commercial: 'Biznes',
     mixed: 'Të ndryshme',
     language: 'English',
   },
@@ -242,6 +245,7 @@ const sq: Translations = {
     title: 'Puna jonë, projekt pas projekti',
     description:
       'Çdo dosje përmbledh mobiljet që kemi prodhuar dhe montuar për një klient. Hapni një projekt për të shfletuar të gjitha fotot.',
+    projectsLabel: 'projekte',
   },
   project: {
     eyebrow: 'Projekt',

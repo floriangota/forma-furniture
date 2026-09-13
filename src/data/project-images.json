@@ -436,5 +436,967 @@
       "width": 1600,
       "height": 1200
     }
+  ],
+  "a-q-residence": [
+    {
+      "src": "/images/projects/a-q-residence/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/08.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/10.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/11.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/12.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/a-q-residence/13.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/a-q-residence/14.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "b-s-penthouse": [
+    {
+      "src": "/images/projects/b-s-penthouse/01.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/03.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/04.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/05.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/06.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/07.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/08.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/09.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/b-s-penthouse/10.jpg",
+      "width": 1200,
+      "height": 1600
+    }
+  ],
+  "berisha-event": [
+    {
+      "src": "/images/projects/berisha-event/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/berisha-event/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/berisha-event/03.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "cafe-amour-studio-nest": [
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/01.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/02.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/03.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/04.jpg",
+      "width": 646,
+      "height": 860
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/05.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/06.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/07.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/08.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/09.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/10.jpg",
+      "width": 646,
+      "height": 860
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/11.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/12.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/13.jpg",
+      "width": 1334,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/14.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/15.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/16.jpg",
+      "width": 1333,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/17.jpg",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/18.jpg",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/19.jpg",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/20.jpg",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/cafe-amour-studio-nest/21.jpg",
+      "width": 1067,
+      "height": 1600
+    }
+  ],
+  "cano-restaurant": [
+    {
+      "src": "/images/projects/cano-restaurant/01.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/cano-restaurant/02.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/cano-restaurant/03.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/cano-restaurant/04.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/cano-restaurant/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cano-restaurant/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cano-restaurant/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cano-restaurant/08.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cano-restaurant/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cano-restaurant/10.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "cherry-lounge-bar": [
+    {
+      "src": "/images/projects/cherry-lounge-bar/01.jpg",
+      "width": 924,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cherry-lounge-bar/02.jpg",
+      "width": 971,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cherry-lounge-bar/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/cherry-lounge-bar/04.jpg",
+      "width": 2000,
+      "height": 1333
+    }
+  ],
+  "d-mobile": [
+    {
+      "src": "/images/projects/d-mobile/01.jpg",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "src": "/images/projects/d-mobile/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile/03.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/d-mobile/04.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/d-mobile/05.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/d-mobile/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile/07.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "d-mobile-store": [
+    {
+      "src": "/images/projects/d-mobile-store/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/d-mobile-store/08.jpg",
+      "width": 1365,
+      "height": 1706
+    },
+    {
+      "src": "/images/projects/d-mobile-store/09.jpg",
+      "width": 1365,
+      "height": 1706
+    },
+    {
+      "src": "/images/projects/d-mobile-store/10.jpg",
+      "width": 1365,
+      "height": 1706
+    }
+  ],
+  "edi-residence": [
+    {
+      "src": "/images/projects/edi-residence/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/07.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/edi-residence/08.jpg",
+      "width": 1677,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/10.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/edi-residence/11.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "f-sh-residence": [
+    {
+      "src": "/images/projects/f-sh-residence/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/08.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/10.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/11.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/f-sh-residence/12.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/f-sh-residence/13.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/f-sh-residence/14.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "goldstore": [
+    {
+      "src": "/images/projects/goldstore/01.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/02.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/03.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/04.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/05.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/06.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/07.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/goldstore/08.jpg",
+      "width": 1200,
+      "height": 1600
+    }
+  ],
+  "k-a-penthouse": [
+    {
+      "src": "/images/projects/k-a-penthouse/01.jpg",
+      "width": 1180,
+      "height": 848
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/02.jpg",
+      "width": 1355,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/04.jpg",
+      "width": 1548,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/06.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/08.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/09.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/k-a-penthouse/10.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "kitchen-place": [
+    {
+      "src": "/images/projects/kitchen-place/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/kitchen-place/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/kitchen-place/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/kitchen-place/04.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "l-h-residence": [
+    {
+      "src": "/images/projects/l-h-residence/01.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/l-h-residence/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/08.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/l-h-residence/09.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "linda-studio": [
+    {
+      "src": "/images/projects/linda-studio/01.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/linda-studio/02.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/linda-studio/03.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/linda-studio/04.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "m-m-residence": [
+    {
+      "src": "/images/projects/m-m-residence/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/08.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/m-m-residence/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/m-m-residence/10.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "r-l-residence": [
+    {
+      "src": "/images/projects/r-l-residence/01.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/r-l-residence/02.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/r-l-residence/03.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/r-l-residence/04.jpg",
+      "width": 2000,
+      "height": 1500
+    }
+  ],
+  "sense-cafe-and-more": [
+    {
+      "src": "/images/projects/sense-cafe-and-more/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/02.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/04.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/05.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/06.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/sense-cafe-and-more/08.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "slb-group-office": [
+    {
+      "src": "/images/projects/slb-group-office/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/slb-group-office/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/slb-group-office/03.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/slb-group-office/04.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/slb-group-office/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/slb-group-office/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/slb-group-office/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/slb-group-office/08.jpg",
+      "width": 2000,
+      "height": 1500
+    }
+  ],
+  "the-la-office": [
+    {
+      "src": "/images/projects/the-la-office/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/the-la-office/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/the-la-office/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/the-la-office/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/the-la-office/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/the-la-office/06.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "venio-by-4-stinet": [
+    {
+      "src": "/images/projects/venio-by-4-stinet/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/05.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/08.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/venio-by-4-stinet/09.jpg",
+      "width": 2000,
+      "height": 1500
+    }
   ]
 }

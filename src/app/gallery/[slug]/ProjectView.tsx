@@ -14,7 +14,17 @@ export default function ProjectView({ slug }: { slug: string }) {
   if (!project) return null;
 
   const cover = coverOf(project);
-  const others = projects.filter((p) => p.slug !== slug).slice(0, 3);
+  const location = project.location[language];
+  const description = project.description?.[language];
+  const groups = project.sections
+    ? project.sections.map((s) => ({ label: s.label[language], images: s.images }))
+    : [{ images: project.images }];
+
+  // three other projects of the same category first, then anything else
+  const others = [...projects]
+    .filter((p) => p.slug !== slug)
+    .sort((a, b) => Number(b.category === project.category) - Number(a.category === project.category))
+    .slice(0, 3);
 
   return (
     <>
@@ -31,18 +41,20 @@ export default function ProjectView({ slug }: { slug: string }) {
             {t.common.backToProjects}
           </Link>
           <h1 className="display mt-6 text-5xl sm:text-6xl lg:text-7xl">{project.name[language]}</h1>
-          <p className="mt-3 text-sm uppercase tracking-widest2 text-stone-200">{project.location[language]}</p>
+          {location && <p className="mt-3 text-sm uppercase tracking-widest2 text-stone-200">{location}</p>}
         </div>
       </section>
 
       {/* Facts + description */}
       <section className="border-b border-stone-200 bg-white">
         <div className="container-x grid gap-10 py-12 lg:grid-cols-12 lg:gap-16">
-          <dl className="grid grid-cols-3 gap-6 text-sm lg:col-span-4 lg:grid-cols-1">
-            <div>
-              <dt className="eyebrow">{t.project.location}</dt>
-              <dd className="mt-2 text-ink">{project.location[language]}</dd>
-            </div>
+          <dl className={`grid grid-cols-3 gap-6 text-sm lg:grid-cols-1 ${description ? 'lg:col-span-4' : 'lg:col-span-12 lg:grid-cols-3'}`}>
+            {location && (
+              <div>
+                <dt className="eyebrow">{t.project.location}</dt>
+                <dd className="mt-2 text-ink">{location}</dd>
+              </div>
+            )}
             <div>
               <dt className="eyebrow">{t.project.category}</dt>
               <dd className="mt-2 text-ink">{t.common[project.category]}</dd>
@@ -52,13 +64,13 @@ export default function ProjectView({ slug }: { slug: string }) {
               <dd className="mt-2 text-ink">{project.images.length}</dd>
             </div>
           </dl>
-          <p className="max-w-2xl text-lg leading-relaxed text-stone-700 lg:col-span-8">{project.description[language]}</p>
+          {description && <p className="max-w-2xl text-lg leading-relaxed text-stone-700 lg:col-span-8">{description}</p>}
         </div>
       </section>
 
       {/* Photos */}
       <section className="container-x py-16 lg:py-20">
-        <ProjectGallery images={project.images} alt={project.name[language]} />
+        <ProjectGallery groups={groups} alt={project.name[language]} />
       </section>
 
       {/* Other projects */}

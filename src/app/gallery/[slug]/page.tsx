@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = getProject(slug);
   if (!project) return {};
   return {
-    title: `${project.name.en} · ${project.location.en}`,
-    description: project.description.en,
+    title: [project.name.en, project.location.en].filter(Boolean).join(' · '),
+    description: project.description?.en ?? `${project.name.en}, ${project.location.en}`.replace(/, $/, ''),
   };
 }
 
