@@ -1,64 +1,78 @@
 'use client';
 
-import Header from '@/components/layout/Header';
+import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/translations/index';
+import PageHero from '@/components/ui/PageHero';
 
-export default function Services() {
-  const { language } = useLanguage();
-  const t = translations[language].services;
+const HERO_IMAGE = '/images/projects/luzern-penthouse/03.jpg';
+const SERVICE_IMAGES = [
+  '/images/projects/luzern-penthouse/08.jpg', // custom furniture
+  '/images/projects/banesa/16.jpg', // interior design
+  '/images/projects/coffee-house-zenn/06.jpg', // installation
+  '/images/projects/banesa/13.jpg', // maintenance
+];
+const PROCESS_IMAGE = '/images/projects/other-works/07.jpg';
 
-  const services = [
-    {
-      name: t.customFurniture,
-      description: t.customFurnitureDesc,
-      icon: '🎨',
-    },
-    {
-      name: t.interiorDesign,
-      description: t.interiorDesignDesc,
-      icon: '🏭',
-    },
-    {
-      name: t.installation,
-      description: t.installationDesc,
-      icon: '🔧',
-    },
-    {
-      name: t.maintenance,
-      description: t.maintenanceDesc,
-      icon: '💡',
-    },
-  ];
+export default function ServicesPage() {
+  const { t } = useLanguage();
+  const s = t.services;
 
   return (
     <>
-      <Header />
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{t.title}</h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              {t.description}
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-              {services.map((service) => (
-                <div key={service.name} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                    <span className="text-3xl">{service.icon}</span>
-                    {service.name}
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                    <p className="flex-auto">{service.description}</p>
-                  </dd>
-                </div>
-              ))}
-            </dl>
+      <PageHero eyebrow={s.eyebrow} title={s.title} text={s.description} image={HERO_IMAGE} />
+
+      {/* Statement */}
+      <section className="container-x py-20 lg:py-24">
+        <p className="display mx-auto max-w-4xl text-center text-2xl leading-snug text-ink sm:text-3xl lg:text-[34px]">
+          {s.statement}
+        </p>
+      </section>
+
+      {/* Services as editorial image blocks */}
+      <section className="container-x grid gap-6 pb-24 sm:grid-cols-2 lg:pb-32">
+        {s.items.map((item, i) => (
+          <article key={item.title} className="group relative aspect-[4/5] overflow-hidden bg-ink sm:aspect-[5/6] lg:aspect-[4/3]">
+            <Image
+              src={SERVICE_IMAGES[i]}
+              alt=""
+              fill
+              sizes="(min-width: 640px) 50vw, 100vw"
+              className="object-cover opacity-90 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-ink/10" />
+            <div className="absolute inset-x-0 bottom-0 p-8 text-white lg:p-10">
+              <p className="display text-5xl text-bronze-light/80">0{i + 1}</p>
+              <h2 className="display mt-3 text-3xl sm:text-4xl">{item.title}</h2>
+              <p className="mt-3 max-w-md text-sm leading-relaxed text-stone-200 sm:text-base">{item.text}</p>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      {/* Process */}
+      <section className="relative overflow-hidden bg-ink py-24 text-white lg:py-32">
+        <Image src={PROCESS_IMAGE} alt="" fill sizes="100vw" className="object-cover opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/70 to-ink" />
+        <div className="container-x relative">
+          <p className="eyebrow text-center text-bronze-light">{s.eyebrow}</p>
+          <h2 className="display mt-3 text-center text-4xl sm:text-5xl">{s.processTitle}</h2>
+          <ol className="mt-16 grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+            {s.steps.map((step, i) => (
+              <li key={step.title} className="bg-ink/80 p-8 backdrop-blur-sm lg:p-10">
+                <p className="display text-5xl text-bronze">0{i + 1}</p>
+                <h3 className="mt-5 text-[13px] font-medium uppercase tracking-widest2 text-white">{step.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-stone-300">{step.text}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-16 text-center">
+            <Link href="/contact" className="btn-light">
+              {t.common.getInTouch}
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
-} 
+}

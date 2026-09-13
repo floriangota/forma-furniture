@@ -1,146 +1,347 @@
-export const translations = {
-  en: {
-    home: {
-      title: 'Crafting Excellence in Furniture',
-      description: 'Discover the perfect blend of style, comfort, and quality with our handcrafted furniture pieces. Made in Kosovo with passion and precision.',
-      viewCollection: 'View Our Collection',
-      contactUs: 'Contact Us'
-    },
-    contact: {
-      title: 'Contact Us',
-      description: 'Get in touch with us for any inquiries about our furniture or to schedule a visit to our showroom.',
-      contactInfo: 'Contact Information',
-      address: 'Address',
-      phone: 'Phone',
-      email: 'Email',
-      businessHours: 'Business Hours',
-      weekdays: 'Monday - Saturday',
-      sunday: 'Sunday',
-      closed: 'Closed',
-      sendMessage: 'Send us a Message',
-      name: 'Name',
-      message: 'Message',
-      send: 'Send Message'
-    },
-    navigation: {
-      home: 'Home',
-      gallery: 'Gallery',
-      services: 'Services',
-      about: 'About Us',
-      contact: 'Contact'
-    },
-    footer: {
-      about: 'About Us',
-      aboutText: 'Forma Furniture is a company dedicated to producing high-quality furniture, combining elegant design with maximum functionality. We offer a wide range of customized furniture, suitable for any space, from homes to modern offices.',
-      contact: 'Contact',
-      address: 'Address',
-      addressLine1: 'Muhoc, Ferizaj',
-      phone: 'Phone',
-      email: 'Email',
-      hours: 'Business Hours',
-      weekdays: 'Monday - Saturday: 8:00 - 17:00',
-      sunday: 'Sunday: Closed',
-      rights: 'All rights reserved'
-    },
-    about: {
-      title: 'About Us',
-      description: 'Forma Furniture is a company dedicated to producing high-quality furniture, combining elegant design with maximum functionality. We offer a wide range of customized furniture, suitable for any space, from homes to modern offices.',
-      paragraph2: 'With a deep commitment to quality and sustainability, we carefully select materials, providing products that withstand the test of time and reflect style and creativity. At Forma Furniture, we believe that every piece of furniture should be an expression of individuality and dedication to comfort, which is why we offer unique designs and personalized options to meet our clients\' needs.',
-      paragraph3: 'Over time, we have built an excellent reputation in the market thanks to our commitment to innovation, craftsmanship, and outstanding customer service. Our vision is to create furniture that inspires, bringing aesthetics and practicality to every space.'
-    },
-    services: {
-      title: 'Our Services',
-      description: 'We offer a comprehensive range of furniture services to meet your needs.',
-      customFurniture: 'Custom Furniture',
-      customFurnitureDesc: 'Tailored designs that perfectly match your space and style preferences.',
-      interiorDesign: 'Interior Design',
-      interiorDesignDesc: 'Professional guidance to create harmonious and functional spaces.',
-      installation: 'Installation',
-      installationDesc: 'Expert installation services to ensure proper setup of your furniture.',
-      maintenance: 'Maintenance',
-      maintenanceDesc: 'Regular maintenance services to keep your furniture in perfect condition.'
-    },
-    gallery: {
-      title: 'Our Gallery',
-      description: 'Explore our collection of handcrafted furniture pieces.',
-      livingRoom: 'Living Room',
-      bedroom: 'Bedroom',
-      office: 'Office',
-      kitchen: 'Kitchen',
-      dining: 'Dining Room',
-      outdoor: 'Outdoor'
-    }
+export type Language = 'en' | 'sq';
+
+const en = {
+  nav: {
+    home: 'Home',
+    projects: 'Projects',
+    services: 'Services',
+    about: 'About us',
+    contact: 'Contact',
   },
-  sq: {
-    home: {
-      title: 'Ndërtimi i Mështeknës së Përkryer në Mobilim',
-      description: 'Zbulo përzierjen perfekte të stilit, rehatisë dhe cilësisë me pjesët tona të mobiluar të punuara me dorë. Bërë në Kosovë me pasion dhe precizion.',
-      viewCollection: 'Shiko Koleksionin Tonë',
-      contactUs: 'Na Kontakto'
-    },
-    contact: {
-      title: 'Na Kontaktoni',
-      description: 'Lidhuni me ne për çdo pyetje në lidhje me mobilimin tonë ose për të planifikuar një vizitë në shfaqjen tonë.',
-      contactInfo: 'Informacioni i Kontaktit',
-      address: 'Adresa',
-      phone: 'Telefoni',
-      email: 'Email',
-      businessHours: 'Orari i Punës',
-      weekdays: 'E Hënë - E Shtunë',
-      sunday: 'E Dielë',
-      closed: 'E Mbyllur',
-      sendMessage: 'Na Dërgoni një Mesazh',
-      name: 'Emri',
-      message: 'Mesazhi',
-      send: 'Dërgo Mesazhin'
-    },
-    navigation: {
-      home: 'Kryefaqja',
-      gallery: 'Galeria',
-      services: 'Shërbimet',
-      about: 'Rreth Nesh',
-      contact: 'Kontakti'
-    },
-    footer: {
-      about: 'Rreth Nesh',
-      aboutText: 'Forma Furniture është një kompani e dedikuar për prodhimin e mobilimit me cilësi të lartë, duke kombinuar dizajnin elegant me funksionalitetin maksimal. Ne ofrojmë një gamë të gjerë mobilimi të personalizuar, të përshtatshëm për çdo hapësirë, nga shtëpitë deri te zyrat moderne.',
-      contact: 'Kontakti',
-      address: 'Adresa',
-      addressLine1: 'Muhoc, Ferizaj',
-      phone: 'Telefoni',
-      email: 'Email',
-      hours: 'Orari i Punës',
-      weekdays: 'E Hënë - E Shtunë: 8:00 - 17:00',
-      sunday: 'E Dielë: E Mbyllur',
-      rights: 'Të gjitha të drejtat e rezervuara'
-    },
-    about: {
-      title: 'Rreth Nesh',
-      description: 'Forma Furniture është një kompani e dedikuar për prodhimin e mobilimit me cilësi të lartë, duke kombinuar dizajnin elegant me funksionalitetin maksimal. Ne ofrojmë një gamë të gjerë mobilimi të personalizuar, të përshtatshëm për çdo hapësirë, nga shtëpitë deri te zyrat moderne.',
-      paragraph2: 'Me një angazhim të thellë për cilësinë dhe qëndrueshmërinë, ne zgjedhim me kujdes materialet, duke ofruar produkte që i rezistojnë provës së kohës dhe reflektojnë stilin dhe krijimtarinë. Në Forma Furniture, ne besojmë se çdo pjesë e mobilimit duhet të jetë një shprehje e individualitetit dhe dedikimit për rehati, prandaj ofrojmë dizajne unike dhe opsione të personalizuara për të përmbushur nevojat e klientëve tanë.',
-      paragraph3: 'Me kalimin e kohës, ne kemi ndërtuar një reputacion të shkëlqyer në treg falë angazhimit tonë për inovacion, zejtari dhe shërbim të shkëlqyer ndaj klientit. Vizioni ynë është të krijojmë mobilim që frymëzon, duke sjellë estetikë dhe praktikë në çdo hapësirë.'
-    },
-    services: {
-      title: 'Shërbimet Tona',
-      description: 'Ne ofrojmë një gamë të gjerë shërbimesh për mobilim për të përmbushur nevojat tuaja.',
-      customFurniture: 'Mobilim i Personalizuar',
-      customFurnitureDesc: 'Dizajne të përshtatura që përputhen në mënyrë perfekte me hapësirën dhe preferencat tuaja të stilit.',
-      interiorDesign: 'Dizajn i Brendshëm',
-      interiorDesignDesc: 'Udhëzime profesionale për të krijuar hapësira harmonike dhe funksionale.',
-      installation: 'Instalim',
-      installationDesc: 'Shërbime profesionale të instalimit për të siguruar konfigurimin e duhur të mobilimit tuaj.',
-      maintenance: 'Mirëmbajtje',
-      maintenanceDesc: 'Shërbime të rregullta mirëmbajtjeje për të mbajtur mobilimin tuaj në gjendje perfekte.'
-    },
-    gallery: {
-      title: 'Galeria Jonë',
-      description: 'Eksploro koleksionin tonë të pjesëve të mobiluar të punuara me dorë.',
-      livingRoom: 'Dhomë Ditori',
-      bedroom: 'Dhomë Gjumit',
-      office: 'Zyrë',
-      kitchen: 'Kuzhinë',
-      dining: 'Dhomë Ngrënie',
-      outdoor: 'Jashtë'
-    }
-  }
-}; 
+  common: {
+    viewProject: 'View project',
+    allProjects: 'All projects',
+    backToProjects: 'Back to projects',
+    contactUs: 'Contact us',
+    getInTouch: 'Get in touch',
+    learnMore: 'Learn more',
+    photos: 'photos',
+    residential: 'Residential',
+    hospitality: 'Hospitality',
+    mixed: 'Various',
+    language: 'Shqip',
+  },
+  home: {
+    heroTitle: 'Custom furniture, made to measure',
+    heroSubtitle: 'We design, produce and install furniture for homes, cafés and offices, in Kosovo and across Europe.',
+    heroCta: 'Discover our projects',
+    pillars: [
+      {
+        title: 'Design & engineering',
+        text: 'From your idea or architect drawings we develop executive plans, materials and finishes for every piece.',
+      },
+      {
+        title: 'Production',
+        text: 'Every element is produced in our own workshop in Ferizaj, with precise machinery and careful hand finishing.',
+      },
+      {
+        title: 'Installation',
+        text: 'Our team delivers and installs on site, so the result matches the drawings down to the last millimetre.',
+      },
+    ],
+    introEyebrow: 'Forma Furniture',
+    introTitle: 'One partner from the first sketch to the finished interior',
+    introText:
+      'Forma Furniture is a furniture manufacturer based in Ferizaj, Kosovo. We work with private clients, architects and businesses to produce interiors that are built to last, combining elegant design with maximum functionality.',
+    introPoints: [
+      'Custom and standard pieces in a wide range of finishes',
+      'A single point of contact until the project is delivered',
+      'Kitchens, wardrobes, living areas, offices and hospitality',
+      'Guaranteed costs and production times',
+      'Delivery and installation in Kosovo and abroad',
+    ],
+    projectsEyebrow: 'Selected work',
+    projectsTitle: 'Recent projects',
+    projectsText: 'A look at the interiors we have produced recently, from a penthouse in Switzerland to a coffee house in France.',
+    sectorsEyebrow: 'What we furnish',
+    sectorsTitle: 'Spaces we work on',
+    sectors: [
+      { title: 'Residential', items: ['Apartments', 'Villas & houses', 'Kitchens', 'Wardrobes & dressing rooms'] },
+      { title: 'Hospitality', items: ['Cafés & coffee houses', 'Restaurants', 'Bars', 'Hotels'] },
+      { title: 'Business', items: ['Offices', 'Reception areas', 'Shops & showrooms', 'Waiting areas'] },
+    ],
+    ctaTitle: 'Have a project in mind?',
+    ctaText: 'Send us your drawings or a few photos of the space and we will come back with a proposal.',
+    ctaButton: 'Contact us',
+  },
+  gallery: {
+    eyebrow: 'Projects',
+    title: 'Our work, project by project',
+    description:
+      'Each folder collects the furniture we produced and installed for one client. Open a project to browse all the photos.',
+  },
+  project: {
+    eyebrow: 'Project',
+    photos: 'Photos',
+    location: 'Location',
+    category: 'Type',
+    otherProjects: 'Other projects',
+  },
+  services: {
+    eyebrow: 'Services',
+    title: 'Everything from a single workshop',
+    description: 'We take care of the whole process, so you only deal with one team.',
+    statement: 'Every project passes through the same hands: the people who draw it also build and install it. That is how we keep control of quality, cost and timing from the first meeting to the last screw.',
+    items: [
+      {
+        title: 'Custom furniture',
+        text: 'Kitchens, wardrobes, living room walls, beds and tables made to your measurements, in the finishes you choose.',
+      },
+      {
+        title: 'Interior design',
+        text: 'We help you plan the space: layouts, materials, colours and lighting that work together and suit how you live or work.',
+      },
+      {
+        title: 'Installation',
+        text: 'Our own installers deliver and mount every piece on site, in Kosovo and abroad.',
+      },
+      {
+        title: 'Maintenance',
+        text: 'Adjustments, repairs and refreshes to keep your furniture in perfect condition for years.',
+      },
+    ],
+    processTitle: 'How a project goes',
+    steps: [
+      { title: 'Consultation', text: 'We visit the space or receive your plans and discuss needs, style and budget.' },
+      { title: 'Design', text: 'We prepare drawings, material samples and a fixed quote.' },
+      { title: 'Production', text: 'Your furniture is produced in our workshop in Ferizaj.' },
+      { title: 'Installation', text: 'We deliver and install, then hand over a finished interior.' },
+    ],
+  },
+  about: {
+    eyebrow: 'About us',
+    title: 'Furniture built with care, in Ferizaj',
+    intro:
+      'Forma Furniture is a company dedicated to producing high-quality furniture, combining elegant design with maximum functionality. We offer a wide range of customized furniture, suitable for any space, from homes to modern offices.',
+    p2: 'With a deep commitment to quality and sustainability, we carefully select materials, providing products that withstand the test of time and reflect style and creativity. We believe that every piece of furniture should be an expression of individuality and dedication to comfort, which is why we offer unique designs and personalized options to meet our clients’ needs.',
+    p3: 'Over time, we have built an excellent reputation in the market thanks to our commitment to innovation, craftsmanship and outstanding customer service. Our vision is to create furniture that inspires, bringing aesthetics and practicality to every space.',
+    quote: 'We believe every piece of furniture should be an expression of individuality and a dedication to comfort.',
+    facts: [
+      { label: 'Based in', value: 'Ferizaj, Kosovo' },
+      { label: 'We deliver to', value: 'Kosovo & Europe' },
+      { label: 'Production', value: 'Own workshop' },
+      { label: 'Projects', value: 'Homes, cafés, offices' },
+    ],
+    mission: 'Our mission',
+    missionText:
+      'To provide exceptional furniture solutions that enhance living and working spaces, while maintaining the highest standards of quality and craftsmanship.',
+    vision: 'Our vision',
+    visionText:
+      'To be the most trusted name in furniture manufacturing in Kosovo, known for innovation, quality and customer satisfaction.',
+    values: 'Our values',
+    valuesList: [
+      'Quality craftsmanship',
+      'Customer satisfaction',
+      'Innovation in design',
+      'Environmental responsibility',
+      'Professional excellence',
+    ],
+  },
+  contact: {
+    eyebrow: 'Contact',
+    title: 'Let’s talk about your space',
+    description: 'Call us, write to us or visit the workshop. We answer every request within one working day.',
+    info: 'Contact information',
+    address: 'Address',
+    addressValue: 'Muhoc, Ferizaj, Kosovo',
+    phone: 'Phone',
+    email: 'Email',
+    hours: 'Working hours',
+    weekdays: 'Monday – Saturday',
+    weekdaysHours: '8:00 – 17:00',
+    sunday: 'Sunday',
+    closed: 'Closed',
+    whatsappTitle: 'Write to us on WhatsApp',
+    whatsappText: 'The quickest way to reach us. Send a few photos of your space or your drawings and we reply during working hours.',
+    whatsappButton: 'Open WhatsApp',
+    callButton: 'Call us',
+    mapTitle: 'Find us',
+    mapText: 'Our workshop and showroom are in Muhoc, just outside Ferizaj. Visits are welcome during working hours.',
+    directions: 'Get directions',
+  },
+  footer: {
+    tagline: 'Custom furniture designed, produced and installed by one team, from our workshop in Ferizaj to your space.',
+    navigation: 'Navigation',
+    contact: 'Contact',
+    hours: 'Working hours',
+    weekdays: 'Mon – Sat: 8:00 – 17:00',
+    sunday: 'Sunday: closed',
+    follow: 'Follow us',
+    rights: 'All rights reserved.',
+  },
+};
+
+export type Translations = typeof en;
+
+const sq: Translations = {
+  nav: {
+    home: 'Kryefaqja',
+    projects: 'Projektet',
+    services: 'Shërbimet',
+    about: 'Rreth nesh',
+    contact: 'Kontakti',
+  },
+  common: {
+    viewProject: 'Shiko projektin',
+    allProjects: 'Të gjitha projektet',
+    backToProjects: 'Kthehu te projektet',
+    contactUs: 'Na kontaktoni',
+    getInTouch: 'Na shkruani',
+    learnMore: 'Mëso më shumë',
+    photos: 'foto',
+    residential: 'Banim',
+    hospitality: 'Hoteleri & gastronomi',
+    mixed: 'Të ndryshme',
+    language: 'English',
+  },
+  home: {
+    heroTitle: 'Mobilje me porosi, sipas masës',
+    heroSubtitle: 'Dizajnojmë, prodhojmë dhe montojmë mobilje për shtëpi, kafene dhe zyra, në Kosovë dhe në gjithë Evropën.',
+    heroCta: 'Zbuloni projektet tona',
+    pillars: [
+      {
+        title: 'Dizajn & inxhinieri',
+        text: 'Nga ideja juaj ose vizatimet e arkitektit zhvillojmë planet ekzekutive, materialet dhe përfundimet për çdo pjesë.',
+      },
+      {
+        title: 'Prodhimi',
+        text: 'Çdo element prodhohet në punëtorinë tonë në Ferizaj, me makineri precize dhe përfundim të kujdesshëm me dorë.',
+      },
+      {
+        title: 'Montimi',
+        text: 'Ekipi ynë dërgon dhe monton në vend, që rezultati të përputhet me vizatimet deri në milimetrin e fundit.',
+      },
+    ],
+    introEyebrow: 'Forma Furniture',
+    introTitle: 'Një partner nga skica e parë deri te enterieri i përfunduar',
+    introText:
+      'Forma Furniture është prodhues mobiljesh me seli në Ferizaj, Kosovë. Punojmë me klientë privatë, arkitektë dhe biznese për të prodhuar enterierë që zgjasin, duke kombinuar dizajnin elegant me funksionalitetin maksimal.',
+    introPoints: [
+      'Pjesë me porosi dhe standarde në një gamë të gjerë përfundimesh',
+      'Një person kontakti deri në dorëzimin e projektit',
+      'Kuzhina, garderoba, dhoma ndenjeje, zyra dhe gastronomi',
+      'Kosto dhe afate prodhimi të garantuara',
+      'Dërgesë dhe montim në Kosovë dhe jashtë',
+    ],
+    projectsEyebrow: 'Punë të zgjedhura',
+    projectsTitle: 'Projektet e fundit',
+    projectsText: 'Një vështrim mbi enterierët që kemi prodhuar së fundmi, nga një penthouse në Zvicër deri te një kafene në Francë.',
+    sectorsEyebrow: 'Çfarë mobilojmë',
+    sectorsTitle: 'Hapësirat ku punojmë',
+    sectors: [
+      { title: 'Banim', items: ['Banesa', 'Vila & shtëpi', 'Kuzhina', 'Garderoba & dhoma veshjeje'] },
+      { title: 'Hoteleri & gastronomi', items: ['Kafene', 'Restorante', 'Bare', 'Hotele'] },
+      { title: 'Biznes', items: ['Zyra', 'Recepsione', 'Dyqane & showroom', 'Hapësira pritjeje'] },
+    ],
+    ctaTitle: 'Keni një projekt në mendje?',
+    ctaText: 'Na dërgoni vizatimet ose disa foto të hapësirës dhe ne kthehemi me një propozim.',
+    ctaButton: 'Na kontaktoni',
+  },
+  gallery: {
+    eyebrow: 'Projektet',
+    title: 'Puna jonë, projekt pas projekti',
+    description:
+      'Çdo dosje përmbledh mobiljet që kemi prodhuar dhe montuar për një klient. Hapni një projekt për të shfletuar të gjitha fotot.',
+  },
+  project: {
+    eyebrow: 'Projekt',
+    photos: 'Foto',
+    location: 'Vendndodhja',
+    category: 'Lloji',
+    otherProjects: 'Projekte të tjera',
+  },
+  services: {
+    eyebrow: 'Shërbimet',
+    title: 'Gjithçka nga një punëtori e vetme',
+    description: 'Ne kujdesemi për të gjithë procesin, që ju të merreni vetëm me një ekip.',
+    statement: 'Çdo projekt kalon nëpër të njëjtat duar: njerëzit që e vizatojnë, e ndërtojnë dhe e montojnë. Kështu e mbajmë nën kontroll cilësinë, koston dhe afatet nga takimi i parë deri te vida e fundit.',
+    items: [
+      {
+        title: 'Mobilje me porosi',
+        text: 'Kuzhina, garderoba, mure dhome ndenjeje, krevate dhe tavolina sipas masave tuaja, në përfundimet që zgjidhni.',
+      },
+      {
+        title: 'Dizajn i brendshëm',
+        text: 'Ju ndihmojmë të planifikoni hapësirën: shpërndarje, materiale, ngjyra dhe ndriçim që funksionojnë së bashku.',
+      },
+      {
+        title: 'Montimi',
+        text: 'Montuesit tanë dërgojnë dhe montojnë çdo pjesë në vend, në Kosovë dhe jashtë.',
+      },
+      {
+        title: 'Mirëmbajtja',
+        text: 'Rregullime, riparime dhe rifreskime për t’i mbajtur mobiljet tuaja në gjendje perfekte për vite.',
+      },
+    ],
+    processTitle: 'Si zhvillohet një projekt',
+    steps: [
+      { title: 'Konsultimi', text: 'Vizitojmë hapësirën ose marrim planet tuaja dhe diskutojmë nevojat, stilin dhe buxhetin.' },
+      { title: 'Dizajni', text: 'Përgatisim vizatimet, mostrat e materialeve dhe një ofertë fikse.' },
+      { title: 'Prodhimi', text: 'Mobiljet tuaja prodhohen në punëtorinë tonë në Ferizaj.' },
+      { title: 'Montimi', text: 'Dërgojmë dhe montojmë, pastaj dorëzojmë një enterier të përfunduar.' },
+    ],
+  },
+  about: {
+    eyebrow: 'Rreth nesh',
+    title: 'Mobilje të ndërtuara me kujdes, në Ferizaj',
+    intro:
+      'Forma Furniture është një kompani e dedikuar për prodhimin e mobiljeve me cilësi të lartë, duke kombinuar dizajnin elegant me funksionalitetin maksimal. Ne ofrojmë një gamë të gjerë mobiljesh të personalizuara, të përshtatshme për çdo hapësirë, nga shtëpitë deri te zyrat moderne.',
+    p2: 'Me një angazhim të thellë për cilësinë dhe qëndrueshmërinë, ne zgjedhim me kujdes materialet, duke ofruar produkte që i rezistojnë provës së kohës dhe reflektojnë stilin dhe krijimtarinë. Besojmë se çdo pjesë e mobiljeve duhet të jetë një shprehje e individualitetit dhe e përkushtimit ndaj rehatisë, prandaj ofrojmë dizajne unike dhe opsione të personalizuara.',
+    p3: 'Me kalimin e kohës kemi ndërtuar një reputacion të shkëlqyer në treg falë angazhimit tonë për inovacion, mjeshtëri dhe shërbim të shkëlqyer ndaj klientit. Vizioni ynë është të krijojmë mobilje që frymëzojnë, duke sjellë estetikë dhe praktikë në çdo hapësirë.',
+    quote: 'Besojmë se çdo pjesë e mobiljeve duhet të jetë një shprehje e individualitetit dhe e përkushtimit ndaj rehatisë.',
+    facts: [
+      { label: 'Me seli në', value: 'Ferizaj, Kosovë' },
+      { label: 'Dërgojmë në', value: 'Kosovë & Evropë' },
+      { label: 'Prodhimi', value: 'Punëtori e jona' },
+      { label: 'Projektet', value: 'Shtëpi, kafene, zyra' },
+    ],
+    mission: 'Misioni ynë',
+    missionText:
+      'Të ofrojmë zgjidhje të jashtëzakonshme mobiljesh që përmirësojnë hapësirat e jetesës dhe të punës, duke ruajtur standardet më të larta të cilësisë dhe mjeshtërisë.',
+    vision: 'Vizioni ynë',
+    visionText:
+      'Të jemi emri më i besueshëm në prodhimin e mobiljeve në Kosovë, i njohur për inovacion, cilësi dhe kënaqësinë e klientëve.',
+    values: 'Vlerat tona',
+    valuesList: [
+      'Mjeshtëri cilësore',
+      'Kënaqësia e klientit',
+      'Inovacion në dizajn',
+      'Përgjegjësi mjedisore',
+      'Ekselencë profesionale',
+    ],
+  },
+  contact: {
+    eyebrow: 'Kontakti',
+    title: 'Le të flasim për hapësirën tuaj',
+    description: 'Na telefononi, na shkruani ose vizitoni punëtorinë. I përgjigjemi çdo kërkese brenda një dite pune.',
+    info: 'Informacioni i kontaktit',
+    address: 'Adresa',
+    addressValue: 'Muhoc, Ferizaj, Kosovë',
+    phone: 'Telefoni',
+    email: 'Email',
+    hours: 'Orari i punës',
+    weekdays: 'E hënë – E shtunë',
+    weekdaysHours: '8:00 – 17:00',
+    sunday: 'E diel',
+    closed: 'Mbyllur',
+    whatsappTitle: 'Na shkruani në WhatsApp',
+    whatsappText: 'Mënyra më e shpejtë për të na kontaktuar. Dërgoni disa foto të hapësirës ose vizatimet tuaja dhe ne përgjigjemi gjatë orarit të punës.',
+    whatsappButton: 'Hap WhatsApp',
+    callButton: 'Na telefononi',
+    mapTitle: 'Na gjeni',
+    mapText: 'Punëtoria dhe showroom-i ynë ndodhen në Muhoc, afër Ferizajt. Vizitat janë të mirëpritura gjatë orarit të punës.',
+    directions: 'Merr udhëzimet',
+  },
+  footer: {
+    tagline: 'Mobilje me porosi të dizajnuara, prodhuara dhe montuara nga një ekip i vetëm, nga punëtoria jonë në Ferizaj deri në hapësirën tuaj.',
+    navigation: 'Navigimi',
+    contact: 'Kontakti',
+    hours: 'Orari i punës',
+    weekdays: 'Hën – Sht: 8:00 – 17:00',
+    sunday: 'E diel: mbyllur',
+    follow: 'Na ndiqni',
+    rights: 'Të gjitha të drejtat e rezervuara.',
+  },
+};
+
+export const translations: Record<Language, Translations> = { en, sq };

@@ -1,0 +1,440 @@
+{
+  "banesa": [
+    {
+      "src": "/images/projects/banesa/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/08.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/banesa/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/10.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/11.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/12.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/banesa/13.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/14.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/15.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/16.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/banesa/17.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/18.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/banesa/19.jpg",
+      "width": 2000,
+      "height": 1500
+    }
+  ],
+  "coffee-house-zenn": [
+    {
+      "src": "/images/projects/coffee-house-zenn/01.jpg",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/02.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/03.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/04.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/05.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/06.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/07.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/08.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/09.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/coffee-house-zenn/10.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "luzern-penthouse": [
+    {
+      "src": "/images/projects/luzern-penthouse/01.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/02.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/03.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/04.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/05.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/06.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/07.jpg",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/08.jpg",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "src": "/images/projects/luzern-penthouse/09.jpg",
+      "width": 1500,
+      "height": 2000
+    }
+  ],
+  "other-works": [
+    {
+      "src": "/images/projects/other-works/01.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/02.jpg",
+      "width": 1280,
+      "height": 962
+    },
+    {
+      "src": "/images/projects/other-works/03.jpg",
+      "width": 1280,
+      "height": 876
+    },
+    {
+      "src": "/images/projects/other-works/04.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "src": "/images/projects/other-works/05.jpg",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "src": "/images/projects/other-works/06.jpg",
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "src": "/images/projects/other-works/07.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/08.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/09.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/10.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/11.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/12.jpg",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/13.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "src": "/images/projects/other-works/14.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "src": "/images/projects/other-works/15.jpg",
+      "width": 640,
+      "height": 960
+    },
+    {
+      "src": "/images/projects/other-works/16.jpg",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "src": "/images/projects/other-works/17.jpg",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/18.jpg",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/19.jpg",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/20.jpg",
+      "width": 1056,
+      "height": 1280
+    },
+    {
+      "src": "/images/projects/other-works/21.jpg",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "src": "/images/projects/other-works/22.jpg",
+      "width": 646,
+      "height": 878
+    },
+    {
+      "src": "/images/projects/other-works/23.jpg",
+      "width": 646,
+      "height": 860
+    },
+    {
+      "src": "/images/projects/other-works/24.jpg",
+      "width": 646,
+      "height": 860
+    },
+    {
+      "src": "/images/projects/other-works/25.jpg",
+      "width": 646,
+      "height": 860
+    },
+    {
+      "src": "/images/projects/other-works/26.jpg",
+      "width": 1152,
+      "height": 1536
+    },
+    {
+      "src": "/images/projects/other-works/27.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/28.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/29.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/30.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/31.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/32.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/33.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/34.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/35.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/36.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/37.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/38.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/39.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/40.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/41.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/projects/other-works/42.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/projects/other-works/43.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/44.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/45.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/46.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/projects/other-works/47.jpg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/projects/other-works/48.jpg",
+      "width": 1600,
+      "height": 1200
+    }
+  ]
+}

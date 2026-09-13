@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw photo sources (processed by scripts/optimize-images.mjs)
+/IMG_TO_ADD

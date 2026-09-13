@@ -2,118 +2,137 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/translations/index';
+import { site } from '@/lib/site';
+import { FacebookIcon, InstagramIcon } from '@/components/ui/SocialIcons';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
-  const t = translations[language].navigation;
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const { language, t, toggleLanguage } = useLanguage();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    setOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    document.body.style.overflow = open ? 'hidden' : '';
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
     };
-  }, [isMenuOpen]);
-
-  if (!mounted) return null;
+  }, [open]);
 
   const navItems = [
-    { href: '/', label: t.home },
-    { href: '/gallery', label: t.gallery },
-    { href: '/services', label: t.services },
-    { href: '/about', label: t.about },
-    { href: '/contact', label: t.contact },
+    { href: '/', label: t.nav.home },
+    { href: '/gallery', label: t.nav.projects },
+    { href: '/services', label: t.nav.services },
+    { href: '/about', label: t.nav.about },
+    { href: '/contact', label: t.nav.contact },
   ];
 
+  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
+
   return (
-    <header className="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
-      <nav className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold text-gray-900">
-            Forma Furniture
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm">
+      {/* Top bar */}
+      <div className="hidden border-b border-stone-200 bg-stone-100 md:block">
+        <div className="container-x flex h-9 items-center justify-between text-[12px] text-stone-600">
+          <div className="flex items-center gap-6">
+            <a href={site.phoneHref} className="hover:text-ink">
+              {site.phone}
+            </a>
+            <a href={`mailto:${site.email}`} className="hover:text-ink">
+              {site.email}
+            </a>
+          </div>
+          <div className="flex items-center gap-5">
+            <button
+              onClick={toggleLanguage}
+              className="uppercase tracking-widest2 text-[11px] hover:text-ink"
+              aria-label="Switch language"
+            >
+              <span className={language === 'en' ? 'text-ink' : ''}>EN</span>
+              <span className="mx-1.5 text-stone-300">|</span>
+              <span className={language === 'sq' ? 'text-ink' : ''}>SQ</span>
+            </button>
+            <span className="h-3 w-px bg-stone-300" />
+            <a href={site.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-ink">
+              <FacebookIcon className="h-3.5 w-3.5" />
+            </a>
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-ink">
+              <InstagramIcon className="h-3.5 w-3.5" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main bar */}
+      <div className="border-b border-stone-200">
+        <nav className="container-x flex h-[72px] items-center justify-between">
+          <Link href="/" className="flex items-center gap-3" aria-label="Forma Furniture home">
+            <Image src="/images/logo.png" alt="" width={44} height={36} className="h-9 w-auto" priority />
+            <span className="font-display text-[26px] font-semibold uppercase leading-none tracking-[0.18em] text-ink">
+              Forma
+              <span className="ml-2 font-sans text-[11px] font-normal normal-case tracking-widest2 text-stone-500">
+                Furniture
+              </span>
+            </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden items-center gap-9 md:flex">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
+              <Link key={item.href} href={item.href} className="nav-link" data-active={isActive(item.href)}>
                 {item.label}
               </Link>
             ))}
-            <button
-              onClick={toggleLanguage}
-              className="px-3 py-1 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
-            >
-              {language === 'en' ? 'SQ' : 'EN'}
-            </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
+            onClick={() => setOpen(!open)}
+            className="-mr-2 p-2 text-ink md:hidden"
             aria-label="Toggle menu"
+            aria-expanded={open}
           >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {isMenuOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              )}
+            <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" stroke="currentColor">
+              {open ? <path d="M6 18L18 6M6 6l12 12" /> : <path d="M3 7h18M3 12h18M3 17h18" />}
             </svg>
           </button>
-        </div>
+        </nav>
+      </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-16 inset-x-0 bg-white shadow-lg">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navItems.map((item) => (
+      {/* Mobile menu */}
+      <div
+        className={`fixed inset-x-0 bottom-0 top-[72px] z-40 flex flex-col bg-stone-50 transition-opacity duration-300 md:hidden ${
+          open ? 'opacity-100' : 'pointer-events-none opacity-0'
+        }`}
+      >
+        <div className="container-x flex flex-1 flex-col justify-between py-10">
+          <ul className="space-y-6">
+            {navItems.map((item) => (
+              <li key={item.href}>
                 <Link
-                  key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                  onClick={() => setIsMenuOpen(false)}
+                  className={`display block text-4xl ${isActive(item.href) ? 'text-bronze' : 'text-ink'}`}
                 >
                   {item.label}
                 </Link>
-              ))}
-              <button
-                onClick={() => {
-                  toggleLanguage();
-                  setIsMenuOpen(false);
-                }}
-                className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-              >
-                {language === 'en' ? 'Shqip' : 'English'}
-              </button>
-            </div>
+              </li>
+            ))}
+          </ul>
+          <div className="space-y-4 border-t border-stone-200 pt-6 text-sm text-stone-600">
+            <button onClick={toggleLanguage} className="btn-outline w-full">
+              {t.common.language}
+            </button>
+            <p>
+              <a href={site.phoneHref}>{site.phone}</a>
+              <br />
+              <a href={`mailto:${site.email}`}>{site.email}</a>
+            </p>
           </div>
-        )}
-      </nav>
+        </div>
+      </div>
     </header>
   );
-} 
+}

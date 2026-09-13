@@ -8,39 +8,44 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+        ink: '#1B1A17',
+        stone: {
+          50: '#F9F7F3',
+          100: '#F2EEE7',
+          200: '#E6DFD3',
+          300: '#D2C8B8',
+          400: '#B3A794',
+          500: '#8C8272',
+          600: '#6B6255',
+          700: '#4E473E',
+          800: '#33302A',
+        },
+        bronze: {
+          DEFAULT: '#A47C4B',
+          light: '#C9A97C',
+          dark: '#7E5D36',
         },
       },
+      fontFamily: {
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
+      },
+      letterSpacing: {
+        widest2: '0.22em',
+      },
+      maxWidth: {
+        '8xl': '88rem',
+      },
       keyframes: {
-        'float-slow': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-20px)' },
-        },
-        'float-medium': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-15px)' },
-        },
-        'float-fast': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
       animation: {
-        'float-slow': 'float-slow 6s ease-in-out infinite',
-        'float-medium': 'float-medium 4s ease-in-out infinite',
-        'float-fast': 'float-fast 3s ease-in-out infinite',
+        'fade-up': 'fade-up 0.7s ease-out both',
       },
     },
   },
   plugins: [],
-} 
+};
